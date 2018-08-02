@@ -12,3 +12,11 @@ h1 {
 p {
     font-family: $open;
 }
+
+.buttonStyle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $fontLightGrey;
+    text-decoration: none;
+}
