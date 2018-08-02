@@ -13,6 +13,11 @@
     padding: 0;
 }
 
+.wrapper {
+    max-width: 1136px;
+    margin: 0 auto;
+}
+
 nav {
     display: flex;
 }
@@ -21,6 +26,6 @@ li {
     list-style: none;
 }
 
-.topNavBar {
+.topNav {
     display: flex;
 }
