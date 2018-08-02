@@ -149,7 +149,25 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #efeeee;
-  text-decoration: none; }
+  text-decoration: none;
+  background: #0e5f88;
+  padding: 25px 45px;
+  border-radius: 8px / 12px;
+  display: inline-block;
+  border: 2px solid #0e5f88;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .buttonStyle:hover {
+    background: #efeeee;
+    color: #0e5f88; }
+  .buttonStyle--dark {
+    background: #1d1d1d;
+    color: #fff;
+    border: 2px solid #1d1d1d; }
+    .buttonStyle--dark:hover {
+      background: #fff;
+      color: #1d1d1d; }
 
 * {
   margin: 0;
@@ -171,9 +189,3 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.buttonStyle {
-  background: #0e5f88;
-  padding: 25px 45px;
-  border-radius: 8px / 12px;
-  display: inline-block; }

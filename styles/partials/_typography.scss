@@ -13,10 +13,65 @@ p {
     font-family: $open;
 }
 
+// .buttonStyle {
+//     font-size: 1.5rem;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     color: $fontLightGrey;
+//     text-decoration: none;
+//     background: $darkBlue;
+//     padding: 25px 45px;
+//     border-radius: 8px / 12px;
+//     display: inline-block;
+//     border: 2px solid $darkBlue;
+//     transition: all 0.2s;
+
+//     &--dark.buttonStyle {
+//         // ...cause BEM...doesn't work here elegantly. When sticking to simply extending .buttonStyle with --dark the .buttonStyle--dark class sits at the same hierachacle level as the class .buttonStyle, and so being no more specific than .buttonStyle, does not overwrite the original style in the below hoverstate.
+//         background: $fontPrimary;
+//         color: #fff;
+//         border: 2px solid $fontPrimary;
+
+//         &:hover {
+//             background: #fff;
+//             color: $fontPrimary;
+//         }
+//     }
+
+//     &:hover {
+//         background: $fontLightGrey;
+//         color: $darkBlue;
+//     }
+// }
+
 .buttonStyle {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     color: $fontLightGrey;
     text-decoration: none;
+    background: $darkBlue;
+    padding: 25px 45px;
+    border-radius: 8px / 12px;
+    display: inline-block;
+    border: 2px solid $darkBlue;
+    transition: all 0.2s;
+
+    &:hover {
+        background: $fontLightGrey;
+        color: $darkBlue;
+    }
+    
+    &--dark {
+        background: $fontPrimary;
+        color: #fff;
+        border: 2px solid $fontPrimary;
+
+        &:hover {
+            background: #fff;
+            color: $fontPrimary;
+        }
+    }
+
 }
+
