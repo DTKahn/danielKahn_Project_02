@@ -1,0 +1,24 @@
+// Project 2 Main Style
+
+@import "partials/setup";
+@import "partials/utils";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/footer";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.topNavBar {
+    display: flex;
+}
