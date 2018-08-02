@@ -134,7 +134,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #1d1d1d; }
 
 h1 {
   font-size: 3.15rem;
