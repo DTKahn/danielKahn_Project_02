@@ -43,3 +43,30 @@ p {
     }
 }
 
+.nav__a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $fontPrimary;
+
+    &:hover {
+        color: $darkBlue;
+    }
+}
+
+///////////////////////////
+///////////////////////////
+////   MEDIA QUERIES   ////
+///////////////////////////
+///////////////////////////
+
+//////////////////
+// START 1000px //
+//////////////////
+@media (max-width: 1000px) {
+
+}
+//////////////////
+//  END 1000px  //
+//////////////////
