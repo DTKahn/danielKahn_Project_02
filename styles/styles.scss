@@ -27,13 +27,16 @@ img {
     margin: 0 auto;
 }
 
-header {
+// HEADER
+
+.mainHeader {
     background: url(../assets/image-1.jpeg) center no-repeat;
     background-size: cover;
     height: 100vh;
+    // display: flex;
+    // flex-direction: column;
 }
 
-// NAV
 .nav {
     display: flex;
     justify-content: space-between;
@@ -56,6 +59,12 @@ header {
 
 .nav__a {
     padding: 15px 0;
+}
+
+.hero {
+    // margin-top: 12vh;
+    position: relative;
+    top: 12vh;
 }
 
 ///////////////////////////

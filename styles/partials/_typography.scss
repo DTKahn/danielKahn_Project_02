@@ -4,7 +4,7 @@ body {
 }
 
 .nav__header {
-    font-size: 3.15rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -20,7 +20,7 @@ p {
     color: $fontLightGrey;
     text-decoration: none;
     background: $darkBlue;
-    padding: 25px 45px;
+    padding: 12px 48px;
     border-radius: 8px / 12px;
     display: inline-block;
     border: 2px solid $darkBlue;
@@ -45,7 +45,7 @@ p {
 
 .nav__a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     color: $fontPrimary;
@@ -55,6 +55,16 @@ p {
     }
 }
 
+
+.hero__text {
+    font-size: 5.2rem;
+    text-transform: uppercase;
+
+    &--small {
+        font-size: 2.1rem;
+        margin: 12px 0 28px 0;
+    }
+}
 ///////////////////////////
 ///////////////////////////
 ////   MEDIA QUERIES   ////
