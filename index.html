@@ -15,7 +15,7 @@
     <header>
         <div class="wrapper">
             <nav class="nav">
-                <h1>Corporate</h1> <!-- Should there be a class added, or since it's an h1 is is ok to leave it off? -->
+                <h1 class="nav__header">Corporate</h1> <!-- Should there be a class added, or since it's an h1 is is ok to leave it off? -->
                 <ul class="nav__ul">
                     <li class="nav__li"><a href="#home">Home</a></li>
                     <li class="nav__li"><a href="#demo">Demo</a></li>
@@ -217,56 +217,56 @@
         <div class="footer1">
             <div class="wrapper">
                 <div class="contact">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>
-                            <a href="info@hackeryou.com">info@hackeryou.com</a> <!-- Design shows infohackeryou.com, added @ -->
+                    <h2 class="contact__header">Contact</h2>
+                    <ul class="contact__options">
+                        <li class="contact__option">
+                            <a class="contact__email" href="info@hackeryou.com">info@hackeryou.com</a> <!-- Design shows infohackeryou.com, added @ -->
                         </li>
-                        <li>
-                            <p>123-456-7890</p>
+                        <li class="contact__option">
+                            <p class="contact__phone">123-456-7890</p>
                         </li>
-                        <li>
-                            <p>Toronto, Ontario</p>
+                        <li class="contact__option">
+                            <p class="contact__address">Toronto, Ontario</p>
                         </li>
-                        <li>
-                            <form action="email.php" method="POST" class="emailForm" name="emailForm">
-                                <label for="emailInput">Your Message</label>
-                                <input type="email" name="emailInput" class="emailInput" id="emailInput" placeholder="email address">
+                        <li class="contact__option">
+                            <form action="email.php" method="POST" class="contact__emailForm" name="emailForm">
+                                <label class="contact__emailLabel" for="emailInput">Your Message</label>
+                                <input type="email" name="emailInput" class="contact__emailInput" id="emailInput" placeholder="email address">
                         </li>
                     </ul>
                 </div> <!-- End of footer contact -->
 
                 <div class="aboutUs">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h2 class="aboutUs__header">About Us</h2>
+                    <p class="aboutUs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> <!-- End of footer aboutUs-->
 
                 <div class="instagram">
-                    <h2>Instagram</h2>
-                    <ul>
-                        <li>
-                            <a href=""><img src="assets/image-15.jpeg" alt="Instagram Preview – Looking down at a desk from point of view of worker"></a>
+                    <h2 class="instagram__header">Instagram</h2>
+                    <ul class="instagram__photoList">
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-15.jpeg" alt="Instagram Preview – Looking down at a desk from point of view of worker"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-16.jpeg" alt="Instagram Preview – Close up of hand touching phone from point of view of person holding phone"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-16.jpeg" alt="Instagram Preview – Close up of hand touching phone from point of view of person holding phone"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-17.jpeg" alt="Instagram Preview – City skyline aerial shot"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-17.jpeg" alt="Instagram Preview – City skyline aerial shot"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-18.jpeg" alt="Instagram Preview – Team-member hands all piled on each other in comradery"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-18.jpeg" alt="Instagram Preview – Team-member hands all piled on each other in comradery"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-19.jpeg" alt="Instagram Preview – Stylistic shot of the corner of an office building from below looking upward"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-19.jpeg" alt="Instagram Preview – Stylistic shot of the corner of an office building from below looking upward"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-20.jpeg" alt="Instagram Preview – a plant and bench"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-20.jpeg" alt="Instagram Preview – a plant and bench"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-21.jpeg" alt="Instagram Preview – Point of view shot looking down at phone"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-21.jpeg" alt="Instagram Preview – Point of view shot looking down at phone"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="assets/image-22.jpeg" alt="Instagram Preview – Espresso-based drink and paperwork on a table"></a>
+                        <li class="instagram__post">
+                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-22.jpeg" alt="Instagram Preview – Espresso-based drink and paperwork on a table"></a>
                         </li>
                     </ul>
                 </div>
@@ -277,7 +277,7 @@
         <div class="footer2">
             <div class="wrapper">
                 <nav class="nav nav--footer">
-                    <h1>Corporate</h1>
+                    <h1 class="nav__header nav__header--footer">Corporate</h1>
                     <ul class="nav__ul nav__ul--footer">
                         <li class="nav__li nav__li--footer"><a href="#home">Home</a></li>
                         <li class="nav__li nav__li--footer"><a href="#demo">Demo</a></li>
@@ -286,20 +286,20 @@
                         <li class="nav__li nav__li--footer"><a href="#about">About Us</a></li>
                     </ul>
                 </nav>
-                <p>2018 All rights reserved ©</p>
+                <p class="copyright">2018 All rights reserved ©</p>
             </div> <!-- End of wrapper for footer2 -->
         </div> <!-- End of footer2 -->
 
-        <aside class="footer">
-            <ul>
-                <li>
-                    <a href="#facebook"><i></i></a>
+        <aside class="social">
+            <ul class="social__list">
+                <li class="social__community">
+                    <a class="social__link" href="#facebook"><i class="social__icon fab fa-facebook"></i></a>
                 </li>
-                <li>
-                    <a href="#instagram"><i></i></a>
+                <li class="social__community">
+                    <a class="social__link" href="#instagram"><i class="social__icon fab fa-instagram"></i></a>
                 </li>
-                <li>
-                    <a href="#pintrest"><i></i></a>
+                <li class="social__community">
+                    <a class="social__link" href="#pintrest"><i class="social__icon fab fa-pinterest-p"></i></a>
                 </li>
             </ul>
         </aside>
