@@ -3,7 +3,7 @@ body {
     font-weight: normal;
 }
 
-h1 {
+.nav__header {
     font-size: 3.15rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -70,3 +70,28 @@ p {
 //////////////////
 //  END 1000px  //
 //////////////////
+
+/////////////////
+// START 600px //
+/////////////////
+@media (max-width: 600px) {
+
+}
+/////////////////
+//  END 600px  //
+/////////////////
+
+/////////////////////////
+//     START 400px     //
+// Testing up to 320px //
+/////////////////////////
+@media (max-width: 400px) {
+    .nav__header {
+        font-size: 2rem;
+    }
+
+}
+/////////////////////////
+//      END 400px      //
+// Testing up to 320px //
+/////////////////////////

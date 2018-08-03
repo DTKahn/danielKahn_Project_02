@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Corporate</title>
     <!-- Desktop design by HackerYou -->
@@ -13,23 +14,25 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
-            <nav class="nav">
-                <h1 class="nav__header">Corporate</h1> <!-- Should there be a class added, or since it's an h1 is is ok to leave it off? -->
-                <ul class="nav__ul">
-                    <li class="nav__li"><a class="nav__a" href="#home">Home</a></li>
-                    <li class="nav__li"><a class="nav__a" href="#demo">Demo</a></li>
-                    <li class="nav__li"><a class="nav__a" href="#blog">Blog</a></li>
-                    <li class="nav__li"><a class="nav__a" href="#pages">Pages</a></li>
-                    <li class="nav__li"><a class="nav__a" href="#about">About Us</a></li>
-                </ul>
-            </nav>
+        <div class="navWrapper">
+            <div class="wrapper">
+                <nav class="nav">
+                    <h1 class="nav__header">Corporate</h1> <!-- Should there be a class added, or since it's an h1 is is ok to leave it off? -->
+                    <ul class="nav__ul">
+                        <li class="nav__li"><a class="nav__a" href="#home">Home</a></li>
+                        <li class="nav__li"><a class="nav__a" href="#demo">Demo</a></li>
+                        <li class="nav__li"><a class="nav__a" href="#blog">Blog</a></li>
+                        <li class="nav__li"><a class="nav__a" href="#pages">Pages</a></li>
+                        <li class="nav__li"><a class="nav__a" href="#about">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
             <div class="hero">
                 <h3 class="hero__text">Welcome</h3>
                 <h3 class="hero__text  hero__text--small">to my Corporate website</h3>
                 <a href="#start" class="hero__button buttonStyle">Start</a> <!-- Start "Button" -->
             </div>            
-        </div>
     </header> <!-- End of Header -->
 
     <main>
@@ -69,7 +72,7 @@
                 <h2 class="servicesWFeatures__header">Services</h2>
                 <ul class="servicesList">
                     <li class="serviceList__service">
-                        <i class="serviceList__graphic"></i>
+                        <i class="fas fa-object-group serviceList__graphic"></i>
                         <h4 class="servicesList__serviceName">UX/UI Design</h4>
                         <p class="servicesList__serviceDescription">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
                         <ul class="servicesList__servicePoints">
@@ -79,7 +82,7 @@
                         </ul>
                     </li>
                     <li class="serviceList__service">
-                        <i class="serviceList__graphic"></i>
+                        <i class="fas fa-laptop serviceList__graphic"></i>
                         <h4 class="servicesList__serviceName">Programming</h4>
                         <p class="servicesList__serviceDescription">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
                         <ul class="servicesList__servicePoints">
@@ -89,7 +92,7 @@
                         </ul>
                     </li>
                     <li class="serviceList__service">
-                        <i class="serviceList__graphic"></i>
+                        <i class="fas fa-chart-line serviceList__graphic"></i>
                         <h4 class="servicesList__serviceName">Analytics</h4>
                         <p class="servicesList__serviceDescription">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
                         <ul class="servicesList__servicePoints">
