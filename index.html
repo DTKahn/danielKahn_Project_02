@@ -117,56 +117,53 @@
             </div> <!-- End of wrapper for testimonials -->
         </section> <!-- End of testitmonials -->
         <section class="projects">
-            <ul>
-                <li>
-                    <!-- <img src="assets/image-6.jpeg" alt=""> Removed, should be a BG image. Delete line before submitting -->
-                    <div class="exampleText">
-                        <h4>Project #1</h4>
-                        <p>Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
+            <ul class="projects__listOfProjects">
+                <li class="projects__project">
+                    <div class="projects__projectInfo">
+                        <h4 class="projects__projectName">Project #1</h4>
+                        <p class="projects__projectDescription">Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
                     </div>
                 </li>
-                <li>
-                    <!-- <img src="assets/image-7.jpeg" alt=""> Removed, should be a BG image. Delete line before submitting -->
-                    <div class="exampleText">
-                        <h4>Project #2</h4>
-                        <p>Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
+                <li class="projects__project">
+                    <div class="projects__projectInfo">
+                        <h4 class="projects__projectName">Project #2</h4>
+                        <p class="projects__projectDescription">Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
                     </div>
                 </li>
-                <li>
-                    <!-- <img src="assets/image-8.jpeg" alt=""> Removed, should be a BG image. Delete line before submitting -->
-                    <div class="exampleText">
-                        <h4>Project #3</h4>
-                        <p>Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
+                <li class="projects__project">
+                    <div class="projects__projectInfo">
+                        <h4 class="projects__projectName">Project #3</h4>
+                        <p class="projects__projectDescription">Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
                     </div>
                 </li>
-                <li>
-                    <!-- <img src="assets/image-9.jpeg" alt=""> Removed, should be a BG image. Delete line before submitting -->
-                    <div class="exampleText">
-                        <h4>Project #4</h4>
-                        <p>Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
+                <li class="projects__project">
+                    <div class="projects__projectInfo">
+                        <h4 class="projects__projectName">Project #4</h4>
+                        <p class="projects__projectDescription">Lorem ipsum dolor sit amet, consecetur adipicing elit.</p>
                     </div>
                 </li>
             </ul>
         </section> <!-- End of Project Examples -->
 
-        <section class="services2">
+        <section class="serviceImage">
             <div class="wrapper">
-                <h2>Services</h2>
-                <ul>
-                    <li>
-                        <div class="services2Text">
-                            <h4>Design</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                            <a href="#more" class="buttonStyle">More</a>
+                <h2 class="serviceImage__header">Services</h2>
+                <ul class="serviceImage__listOfServices">
+                    <li class="serviceImage__service">
+                        <div class="serviceImage__info">
+                            <h4 class="serviceImage__serviceName">Design</h4>
+                            <p class="serviceImage__serviceDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            <a href="#more" class="serviceImage__moreInfo buttonStyle">More</a>
                         </div>
-                        <div class="services2Image services2Image1"></div>
+                        <div class="serviceImage__image serviceImage__image--img1"></div>
                     </li>
-                    <li>
-                        <div class="services2Image services2Image2"></div>
-                        <div class="services2Text">
-                            <h4>Analytics</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                            <a href="#more" class="buttonStyle">More</a>
+                    <li class="serviceImage__service">
+                        <div class="serviceImage__image serviceImage__image--img2"></div>
+                        <div class="serviceImage__info">
+                            <h4 class="serviceImage__serviceName">Analytics</h4>
+                            <p class="serviceImage__serviceDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            <a href="#more" class="serviceImage__moreInfo buttonStyle">More</a>
                         </div>
                     </li>
                 </ul>
@@ -175,40 +172,40 @@
 
         <section class="ask">
             <div class="wrapper">
-                <h2>Ask a Question</h2>
-                <form action="ask.php" method="POST" class="askQuestion" name="askQuestion">
-                    <label for="questionBox">Your Message</label>
-                    <input type="text" name="questionBox" class="questionBox" id="questionBox" placeholder="Your Message">
+                <h2 class="ask__header">Ask a Question</h2>
+                <form action="ask.php" method="POST" class="ask__form" name="ask">
+                    <label for="questionBox" class="ask__questionLabel">Your Message</label>
+                    <input type="text" name="questionBox" class="ask__questionBox" id="questionBox" placeholder="Your Message">
 
-                    <label for="submitQuestion">Send</label>
-                    <input type="submit" value="Send" id="submitQuestion" class="submitQuestion buttonStyle buttonStyle--dark" name="submitQuestion">
+                    <label for="submitQuestion" class="ask__submitLabel">Send</label>
+                    <input type="submit" value="Send" id="submitQuestion" class="ask__submitQuestion buttonStyle buttonStyle--dark" name="submitQuestion">
                 </form>
             </div> <!-- End of wrapper for ask -->
         </section> <!-- End of ask -->
 
         <section class="team">
             <div class="wrapper">
-                <h2>Our Team</h2>
-                <ul>
-                    <li>
-                        <img src="assets/image-12.jpeg" alt="Headshot of Claude Monet, Founder and President">
-                        <div class="nameRole">
-                            <h4>Claude Monet</h4>
-                            <p>Founder/President</p>
+                <h2 class="team__header">Our Team</h2>
+                <ul class="team__teamList">
+                    <li class="team__teamMember">
+                        <img class"team__headshot" src="assets/image-12.jpeg" alt="Headshot of Claude Monet, Founder and President">
+                        <div class="team__about">
+                            <h4 class="team__name">Claude Monet</h4>
+                            <p class="team__jobTitle">Founder/President</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="assets/image-13.jpeg" alt="Headshot of David Regan, Programmer">
-                        <div class="nameRole">
-                            <h4>David Regan</h4>
-                            <p>Programmer</p>
+                    <li class="team__teamMember">
+                        <img class"team__headshot" src="assets/image-13.jpeg" alt="Headshot of David Regan, Programmer">
+                        <div class="team__about">
+                            <h4 class="team__name">David Regan</h4>
+                            <p class="team__jobTitle">Programmer</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="assets/image-14.jpeg" alt="Headshot of Frida Kahlo, CEO">
-                        <div class="nameRole">
-                            <h4>Frida Kahlo</h4>
-                            <p>CEO</p>
+                    <li class="team__teamMember">
+                        <img class"team__headshot" src="assets/image-14.jpeg" alt="Headshot of Frida Kahlo, CEO">
+                        <div class="team__about">
+                            <h4 class="team__name">Frida Kahlo</h4>
+                            <p class="team__jobTitle">CEO</p>
                         </div>
                     </li>
                 </ul>
