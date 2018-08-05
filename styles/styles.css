@@ -207,12 +207,28 @@ img {
 .mainHeader {
   background: url(../assets/image-1.jpeg) center no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.navWrapper {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0; }
 
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -229,26 +245,13 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding-left: 40px; }
-
-.nav__li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.nav__a {
-  padding: 15px 0; }
-
-.hero {
-  position: relative;
-  top: 12vh; }
+  padding-left: 40px;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%; }
 
 @media (max-width: 1000px) {
   .navWrapper {
-    background: rgba(255, 255, 255, 0.7); }
+    background: rgba(255, 255, 255, 0.9); }
   .nav {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
