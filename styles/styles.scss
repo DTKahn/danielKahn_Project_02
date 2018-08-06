@@ -74,6 +74,8 @@ p {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 20;
 }
 
 .navWrapper {
@@ -82,6 +84,7 @@ p {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 30;
 }
 
 .nav {
@@ -89,8 +92,8 @@ p {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
-
+    padding: 25px 0;
+    
     &__header {
     font-size: 3rem;
     font-weight: 700;
@@ -108,6 +111,17 @@ p {
             color: $darkBlue;
         }
     }
+}
+
+.navBg {
+    height: 109px;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
 }
     
 .hero__text {
@@ -132,7 +146,7 @@ p {
 // MAIN //
 //////////
 
-// WELCOME
+// welcome
 
 .welcome {
     text-align: center;
@@ -160,6 +174,68 @@ p {
 .welcome__button {
     margin-bottom: 100px;
 }
+
+// whyChoose
+
+.whyChooseSection {
+    display: flex;
+    max-width: $fullScreen;
+    margin: 0 auto;
+    background: $bgGrey;
+}
+
+.whyChoose {
+    width: 50%;
+    background: $bgGrey;
+    padding-bottom: 20px;
+}
+
+.whyChooseSection__bgDiv {
+    width: 50%;
+    background: url(../assets/image-4.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.whyChoose__header {
+    text-transform: uppercase;
+    columns: $fontPrimary;
+    margin: 100px 0 100px 100px;
+    font-size: 3rem;
+}
+
+.whyChoose__reason {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.whyChoose__2ndHeader {
+    font-size: 2rem;
+}
+
+.whyChoose__imgDiv {
+    width: 20%;
+    margin-left: 100px;
+}
+
+.whyChoose__img {
+    width: 100%;
+}
+
+.whyChoose__text {
+    width: 50%;
+    position: relative;
+    top: -8px;
+    margin-left: 30px;
+    color: $fontPrimary;
+}
+
+.whyChoose__description {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
 
 ///////////////////////////
 ///////////////////////////
