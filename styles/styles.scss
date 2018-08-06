@@ -2,15 +2,21 @@
 
 @import "partials/setup";
 @import "partials/utils";
-@import "partials/typography";
-@import "partials/header";
-@import "partials/footer";
+// @import "partials/typography";
+// @import "partials/header";
+// @import "partials/footer";
 
 // General Styles
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 li {
@@ -21,10 +27,43 @@ img {
     max-width: 100%;
 }
 
-.wrapper {
-    max-width: 1140px;
-    width: 90%;
-    margin: 0 auto;
+body {
+    font-family: $mont;
+    font-weight: normal;
+}
+
+p {
+    font-family: $open;
+}
+
+.buttonStyle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $fontLightGrey;
+    text-decoration: none;
+    background: $darkBlue;
+    padding: 12px 48px;
+    border-radius: 8px / 12px;
+    display: inline-block;
+    border: 2px solid $darkBlue;
+    transition: all 0.2s;
+    
+    &:hover {
+        background: $fontLightGrey;
+        color: $darkBlue;
+    }
+    
+    &--dark {
+        background: $fontPrimary;
+        color: #fff;
+        border: 2px solid $fontPrimary;
+        
+        &:hover {
+            background: #fff;
+            color: $fontPrimary;
+        }
+    }
 }
 
 // HEADER
@@ -36,8 +75,6 @@ img {
     display: flex;
     align-items: center;
 }
-
-
 
 .navWrapper {
     position: fixed;
@@ -52,9 +89,36 @@ img {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
-}
+    padding: 30px 0;
 
+    &__header {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+    
+    &__a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $fontPrimary;
+        
+        &:hover {
+            color: $darkBlue;
+        }
+    }
+}
+    
+.hero__text {
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    
+    &--small {
+        font-size: 2.1rem;
+        margin: 12px 0 28px 0;
+    }
+}
 
 .nav__ul {
     display: flex;
@@ -62,6 +126,39 @@ img {
     justify-content: space-between;
     padding-left: 40px;
     flex-basis: 100%;
+}
+
+//////////
+// MAIN //
+//////////
+
+// WELCOME
+
+.welcome {
+    text-align: center;
+}
+
+.welcome__header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 100px 0 60px 0;
+
+    .welcome__span {
+        color: $darkBlue;
+        text-transform: uppercase;
+    }
+}
+
+.welcome__content {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: $fontGrey;
+    margin-bottom: 40px;
+}
+
+.welcome__button {
+    margin-bottom: 100px;
 }
 
 ///////////////////////////
@@ -130,7 +227,9 @@ img {
 // Testing up to 320px //
 /////////////////////////
 @media (max-width: 400px) {
-
+    .nav__header {
+        font-size: 2rem;
+    }
 }
 /////////////////////////
 //      END 400px      //
