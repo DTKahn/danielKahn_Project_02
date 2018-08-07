@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     max-width: 1140px;
     width: 90%;
@@ -108,7 +112,7 @@ p {
         color: $fontPrimary;
         
         &:hover {
-            color: $darkBlue;
+            color: desaturate(lighten($darkBlue, 20),50);
         }
     }
 }
@@ -234,7 +238,70 @@ p {
     margin-top: 10px;
 }
 
+// servicesWFeatures
 
+.servicesWFeatures {
+    padding: 100px 0;
+}
+.servicesWFeatures__header {
+    text-transform: uppercase;
+    columns: $fontPrimary;
+    text-align: center;
+    margin: 100px 0 80px 0;
+    margin: 0 0 80px 0;
+    font-size: 3rem;
+}
+
+.servicesList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviceList__service {
+    width: 31.5%;
+    text-align: center;
+}
+
+.serviceList__linkContent {
+    padding: 60px 30px;
+    color: $fontPrimary;
+    border: 2px solid $bgBlue;
+    border-radius: 15px;
+}
+
+.serviceList__linkContent:hover {
+    background: $bgBlue;
+}
+
+.serviceList__graphic {
+    font-size: 5rem;
+    padding-bottom: 50px;
+}
+
+.servicesList__serviceName {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.servicesList__servicePoints {
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: $open;
+}
+
+.servicesList__servicePoint {
+    line-height: 2;
+}
+
+.servicesList__servicePoint::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f00c";
+    padding-right: 5px;
+}
+    
 
 
 ///////////////////////////

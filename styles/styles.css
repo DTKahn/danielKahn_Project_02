@@ -136,6 +136,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 .wrapper {
   max-width: 1140px;
   width: 90%;
@@ -225,7 +228,7 @@ p {
     font-weight: 700;
     color: #1d1d1d; }
     .nav__a:hover {
-      color: #0e5f88; }
+      color: #578ba5; }
 
 .navBg {
   height: 109px;
@@ -327,6 +330,63 @@ p {
 .whyChoose__description {
   font-size: 1rem;
   margin-top: 10px; }
+
+.servicesWFeatures {
+  padding: 100px 0; }
+
+.servicesWFeatures__header {
+  text-transform: uppercase;
+  -webkit-columns: #1d1d1d;
+  columns: #1d1d1d;
+  text-align: center;
+  margin: 100px 0 80px 0;
+  margin: 0 0 80px 0;
+  font-size: 3rem; }
+
+.servicesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.serviceList__service {
+  width: 31.5%;
+  text-align: center; }
+
+.serviceList__linkContent {
+  padding: 60px 30px;
+  color: #1d1d1d;
+  border: 2px solid #8ecceb;
+  border-radius: 15px; }
+
+.serviceList__linkContent:hover {
+  background: #8ecceb; }
+
+.serviceList__graphic {
+  font-size: 5rem;
+  padding-bottom: 50px; }
+
+.servicesList__serviceName {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 15px; }
+
+.servicesList__servicePoints {
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif; }
+
+.servicesList__servicePoint {
+  line-height: 2; }
+
+.servicesList__servicePoint::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f00c";
+  padding-right: 5px; }
 
 @media (max-width: 1000px) {
   .navWrapper {
