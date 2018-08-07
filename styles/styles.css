@@ -132,6 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -158,13 +161,13 @@ p {
   font-family: "Open Sans", sans-serif; }
 
 .buttonStyle {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: #efeeee;
   text-decoration: none;
   background: #0e5f88;
-  padding: 12px 48px;
+  padding: 12px 55px;
   border-radius: 8px / 12px;
   display: inline-block;
   border: 2px solid #0e5f88;
@@ -218,12 +221,12 @@ p {
   align-items: center;
   padding: 25px 0; }
   .nav__header {
-    font-size: 3rem;
+    font-size: 4.8rem;
     font-weight: 700;
     text-transform: uppercase; }
   .nav__a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #1d1d1d; }
@@ -240,17 +243,17 @@ p {
   z-index: 10; }
 
 .hero__text {
-  font-size: 5.2rem;
+  font-size: 8.5rem;
   text-transform: uppercase; }
   .hero__text--small {
-    font-size: 2.1rem;
-    margin: 12px 0 28px 0; }
+    font-size: 3.6rem;
+    margin: 20px 0 40px 0; }
 
 .nav__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 661px;
+  max-width: 700px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -262,9 +265,9 @@ p {
   text-align: center; }
 
 .welcome__header {
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: uppercase;
-  margin: 100px 0 60px 0; }
+  margin: 120px 0 65px 0; }
   .welcome__header .welcome__span {
     color: #0e5f88;
     text-transform: uppercase; }
@@ -272,12 +275,12 @@ p {
 .welcome__content {
   width: 90%;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #5d5e5d;
-  margin-bottom: 40px; }
+  margin-bottom: 60px; }
 
 .welcome__button {
-  margin-bottom: 100px; }
+  margin-bottom: 130px; }
 
 .whyChooseSection {
   display: -webkit-box;
@@ -301,7 +304,7 @@ p {
   -webkit-columns: #1d1d1d;
   columns: #1d1d1d;
   margin: 100px 0 100px 100px;
-  font-size: 3rem; }
+  font-size: 5rem; }
 
 .whyChoose__reason {
   display: -webkit-box;
@@ -310,10 +313,9 @@ p {
   margin-bottom: 80px; }
 
 .whyChoose__2ndHeader {
-  font-size: 2rem; }
+  font-size: 3.5rem; }
 
 .whyChoose__imgDiv {
-  width: 20%;
   margin-left: 100px; }
 
 .whyChoose__img {
@@ -327,8 +329,9 @@ p {
   color: #1d1d1d; }
 
 .whyChoose__description {
-  font-size: 1rem;
-  margin-top: 10px; }
+  font-size: 1.7rem;
+  margin-top: 10px;
+  line-height: 1.8; }
 
 .servicesWFeatures {
   padding: 100px 0; }
@@ -433,10 +436,15 @@ p {
 .projects__listOfProjects {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .projects__project {
   width: 25%;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -447,12 +455,14 @@ p {
   display: flex;
   background: rgba(29, 29, 29, 0.8);
   opacity: 0;
+  opacity: 1;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s; }
-
-.project__link:hover {
-  opacity: 1; }
+  transition: all 0.3s;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .projects__projectInfo {
   margin: 35px 60px;
@@ -486,6 +496,10 @@ p {
 .projects__project--project03 {
   background: lightgrey url(../assets/image-9.jpeg) center no-repeat;
   background-size: cover; }
+
+@media (max-width: 1440px) {
+  .projects__project {
+    width: 50%; } }
 
 @media (max-width: 1000px) {
   .navWrapper {
