@@ -23,3 +23,9 @@ $open       :'Open Sans', sans-serif;
 
 $fullScreen : 1680px; // Will still be full screen width on 15" MBPs but will constrain after that
 
+@mixin headerStyles($color) { 
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4.5rem;
+    color: $color;
+}

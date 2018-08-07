@@ -17,6 +17,15 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: lightgrey;
+}
+
+.bigWrapper {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
 .wrapper {
     max-width: 1140px;
     width: 90%;
@@ -123,9 +132,9 @@ p {
     position: fixed;
     background: #fff;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 10;
+    width: 100%;
+    margin: 0 auto;
 
 }
     
@@ -155,12 +164,13 @@ p {
 
 .welcome {
     text-align: center;
+    background: #fff;
 }
 
 .welcome__header {
-    font-size: 5rem;
-    text-transform: uppercase;
-    margin: 120px 0 65px 0;
+    @include headerStyles($fontPrimary);
+    margin-bottom: 65px;
+    padding-top: 120px;
 
     .welcome__span {
         color: $darkBlue;
@@ -202,10 +212,9 @@ p {
 }
 
 .whyChoose__header {
-    text-transform: uppercase;
-    columns: $fontPrimary;
+    @include headerStyles($fontPrimary);
     margin: 100px 0 100px 100px;
-    font-size: 5rem;
+    text-align: left;
 }
 
 .whyChoose__reason {
@@ -244,13 +253,11 @@ p {
 
 .servicesWFeatures {
     padding: 100px 0;
+    background: #fff;
 }
 .servicesWFeatures__header {
-    text-transform: uppercase;
-    color: $fontPrimary;
-    text-align: center;
+    @include headerStyles($fontPrimary);
     margin: 0 0 80px 0;
-    font-size: 3rem;
 }
 
 .servicesList {
@@ -312,10 +319,7 @@ p {
 
 
 .testimonials__header {
-    color: $testHeader;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3rem;
+    @include headerStyles($testHeader);
     padding: 100px 0 80px 0;
 }
 

@@ -142,6 +142,13 @@ html {
 a {
   text-decoration: none; }
 
+body {
+  background: lightgrey; }
+
+.bigWrapper {
+  max-width: 2500px;
+  margin: 0 auto; }
+
 .wrapper {
   max-width: 1140px;
   width: 90%;
@@ -238,9 +245,9 @@ p {
   position: fixed;
   background: #fff;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10; }
+  z-index: 10;
+  width: 100%;
+  margin: 0 auto; }
 
 .hero__text {
   font-size: 8.5rem;
@@ -262,12 +269,16 @@ p {
   flex-basis: 100%; }
 
 .welcome {
-  text-align: center; }
+  text-align: center;
+  background: #fff; }
 
 .welcome__header {
-  font-size: 5rem;
   text-transform: uppercase;
-  margin: 120px 0 65px 0; }
+  text-align: center;
+  font-size: 4.5rem;
+  color: #1d1d1d;
+  margin-bottom: 65px;
+  padding-top: 120px; }
   .welcome__header .welcome__span {
     color: #0e5f88;
     text-transform: uppercase; }
@@ -301,10 +312,11 @@ p {
 
 .whyChoose__header {
   text-transform: uppercase;
-  -webkit-columns: #1d1d1d;
-  columns: #1d1d1d;
+  text-align: center;
+  font-size: 4.5rem;
+  color: #1d1d1d;
   margin: 100px 0 100px 100px;
-  font-size: 5rem; }
+  text-align: left; }
 
 .whyChoose__reason {
   display: -webkit-box;
@@ -334,14 +346,15 @@ p {
   line-height: 1.8; }
 
 .servicesWFeatures {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background: #fff; }
 
 .servicesWFeatures__header {
   text-transform: uppercase;
-  color: #1d1d1d;
   text-align: center;
-  margin: 0 0 80px 0;
-  font-size: 3rem; }
+  font-size: 4.5rem;
+  color: #1d1d1d;
+  margin: 0 0 80px 0; }
 
 .servicesList {
   display: -webkit-box;
@@ -393,10 +406,10 @@ p {
   text-align: center; }
 
 .testimonials__header {
-  color: #dfdede;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4.5rem;
+  color: #dfdede;
   padding: 100px 0 80px 0; }
 
 .testimonials__imgChev {
