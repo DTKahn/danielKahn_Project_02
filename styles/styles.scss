@@ -183,7 +183,7 @@ p {
 
 .whyChooseSection {
     display: flex;
-    max-width: $fullScreen;
+    // max-width: $fullScreen;
     margin: 0 auto;
     background: $bgGrey;
 }
@@ -350,6 +350,67 @@ p {
     font-family: $mont;
     margin-top: 30px;
     padding-bottom: 120px;
+}
+
+// projects
+
+.projects__listOfProjects {
+    display: flex;
+}
+
+.projects__project {
+    width: 25%;
+    display: flex;
+}
+
+.project__link {
+    display: flex;
+    background: $teamHover;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.project__link:hover {
+    opacity: 1;
+}
+
+.projects__projectInfo {
+    margin: 35px 60px;
+    padding: 60px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.projects__projectName {
+    color: $projectGrey;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+
+}
+
+.projects__projectDescription {
+    color: $projectGrey;
+    font-size: 1.2rem;
+}
+
+.projects__project--project00 {
+    background: lightgrey url(../assets/image-6.jpeg) center no-repeat;
+    background-size: cover;
+}
+.projects__project--project01 {
+    background: lightgrey url(../assets/image-7.jpeg) center no-repeat;
+    background-size: cover;
+}
+.projects__project--project02 {
+    background: lightgrey url(../assets/image-8.jpeg) center no-repeat;
+    background-size: cover;
+}
+.projects__project--project03 {
+    background: lightgrey url(../assets/image-9.jpeg) center no-repeat;
+    background-size: cover;
 }
 
 ///////////////////////////

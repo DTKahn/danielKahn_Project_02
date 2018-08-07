@@ -283,7 +283,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1680px;
   margin: 0 auto;
   background: #f1f3f3; }
 
@@ -430,6 +429,63 @@ p {
   font-family: "Montserrat", sans-serif;
   margin-top: 30px;
   padding-bottom: 120px; }
+
+.projects__listOfProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.projects__project {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.project__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(29, 29, 29, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.project__link:hover {
+  opacity: 1; }
+
+.projects__projectInfo {
+  margin: 35px 60px;
+  padding: 60px 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center; }
+
+.projects__projectName {
+  color: #e6e2e2;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin-bottom: 40px; }
+
+.projects__projectDescription {
+  color: #e6e2e2;
+  font-size: 1.2rem; }
+
+.projects__project--project00 {
+  background: lightgrey url(../assets/image-6.jpeg) center no-repeat;
+  background-size: cover; }
+
+.projects__project--project01 {
+  background: lightgrey url(../assets/image-7.jpeg) center no-repeat;
+  background-size: cover; }
+
+.projects__project--project02 {
+  background: lightgrey url(../assets/image-8.jpeg) center no-repeat;
+  background-size: cover; }
+
+.projects__project--project03 {
+  background: lightgrey url(../assets/image-9.jpeg) center no-repeat;
+  background-size: cover; }
 
 @media (max-width: 1000px) {
   .navWrapper {
