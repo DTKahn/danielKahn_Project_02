@@ -203,7 +203,10 @@ p {
     width: 50%;
     background: $bgGrey;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
+
 
 .whyChooseSection__bgDiv {
     width: 50%;
@@ -211,15 +214,22 @@ p {
     background-size: cover;
 }
 
+.whyChoose__inner {
+    width: 70%;
+    // flex-direction: column;
+}
+
 .whyChoose__header {
     @include headerStyles($fontPrimary);
-    margin: 100px 0 100px 100px;
+    margin: 100px 0;
     text-align: left;
 }
 
 .whyChoose__reason {
     display: flex;
     margin-bottom: 80px;
+    align-items: stretch;
+    flex-basis: 60%;
 }
 
 .whyChoose__2ndHeader {
@@ -227,16 +237,17 @@ p {
 }
 
 .whyChoose__imgDiv {
-    // width: 20%;
-    margin-left: 100px;
+    flex-basis: 20%;
 }
 
 .whyChoose__img {
     width: 100%;
+    height: calc(100% - 8px);
+    object-fit: cover;
 }
 
 .whyChoose__text {
-    width: 50%;
+    flex-basis: 80%;
     position: relative;
     top: -8px;
     margin-left: 30px;
@@ -271,10 +282,11 @@ p {
 }
 
 .serviceList__linkContent {
-    padding: 60px 30px;
+    padding: 60px 40px;
     color: $fontPrimary;
     border: 2px solid $bgBlue;
     border-radius: 15px;
+    transition: all 0.2s;
 }
 
 .serviceList__linkContent:hover {
@@ -282,13 +294,13 @@ p {
 }
 
 .serviceList__graphic {
-    font-size: 5rem;
+    font-size: 8rem;
     padding-bottom: 50px;
 }
 
 .servicesList__serviceName {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
@@ -299,8 +311,13 @@ p {
     font-family: $open;
 }
 
+.servicesList__serviceDescription {
+    font-size: 1.5rem;
+}
+
 .servicesList__servicePoint {
     line-height: 2;
+    font-size: 1.5rem;
 }
 
 .servicesList__servicePoint::before {
@@ -337,7 +354,7 @@ p {
 .testimonials__chevron{
     font-weight: 700;
     color: $chevronGrey;
-    font-size: 2rem;
+    font-size: 3rem;
 
     &:hover {
         color: desaturate(lighten($darkBlue, 20),50);
@@ -346,12 +363,12 @@ p {
 
 .testimonials__quote {
     color: $testimonials;
-    font-size: 1.8rem;
+    font-size: 2.9rem;
 }
 
 .testimonials__name {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2.9rem;
     font-style: italic;
     font-family: $mont;
     margin-top: 30px;
@@ -375,15 +392,14 @@ p {
     display: flex;
     background: $teamHover;
     opacity: 0;
-    opacity: 1;
     transition: all 0.3s;
     width: 100%;
     justify-content: center;
 }
 
-// .project__link:hover {
-//     opacity: 1;
-// }
+.project__link:hover {
+    opacity: 1;
+}
 
 .projects__projectInfo {
     margin: 35px 60px;
@@ -391,20 +407,20 @@ p {
     border: 2px solid #fff;
     border-radius: 10px;
     text-align: center;
-
 }
 
 .projects__projectName {
     color: $projectGrey;
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin-bottom: 40px;
 
 }
 
 .projects__projectDescription {
     color: $projectGrey;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
 }
 
 .projects__project--project00 {
@@ -422,6 +438,73 @@ p {
 .projects__project--project03 {
     background: lightgrey url(../assets/image-9.jpeg) center no-repeat;
     background-size: cover;
+}
+
+// serviceImage
+
+.serviceImage {
+    background: #fff;
+    padding-bottom: 120px;
+}
+
+.serviceImage__service {
+    display: flex;
+    padding-bottom: 35px;
+}
+
+.serviceImage__info {
+    width: 50%;
+    text-align: center;
+    padding: 7%;
+    position: relative;
+}
+
+.serviceImage__info::before {
+    position: absolute;
+    font-size: 15rem;
+    font-family: $mont;
+    font-weight: 800;
+    top: 9px;
+    left: 72px;
+    color: $servicesBGNumbers;
+}
+
+.serviceImage__info--1::before {
+    content: "1.";
+}
+
+.serviceImage__info--2::before {
+    content: "2.";
+}
+
+.serviceImage__image {
+    width: 50%;
+}
+
+.serviceImage__image--img1 {
+    background: lightgrey url(../assets/image-10.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.serviceImage__image--img2 {
+    background: lightgrey url(../assets/image-11.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.serviceImage__header {
+    @include headerStyles($fontPrimary);
+    padding: 120px 0 80px 0;
+}
+
+.serviceImage__serviceName {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.serviceImage__serviceDescription {
+    font-size: 1.5rem;
+    padding-bottom: 50px;
 }
 
 ///////////////////////////
