@@ -245,9 +245,8 @@ p {
 }
 .servicesWFeatures__header {
     text-transform: uppercase;
-    columns: $fontPrimary;
+    color: $fontPrimary;
     text-align: center;
-    margin: 100px 0 80px 0;
     margin: 0 0 80px 0;
     font-size: 3rem;
 }
@@ -301,8 +300,57 @@ p {
     content: "\f00c";
     padding-right: 5px;
 }
-    
 
+// testimonials
+
+.testimonials {
+    background: $fontPrimary;
+    text-align: center;
+}
+
+
+.testimonials__header {
+    color: $testHeader;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    padding: 100px 0 80px 0;
+}
+
+.testimonials__imgChev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.testimonials__testimonialHeadshotDiv {
+    margin: 0 40px;
+}
+
+.testimonials__chevron{
+    font-weight: 700;
+    color: $chevronGrey;
+    font-size: 2rem;
+
+    &:hover {
+        color: desaturate(lighten($darkBlue, 20),50);
+    }
+}
+
+.testimonials__quote {
+    color: $testimonials;
+    font-size: 1.8rem;
+}
+
+.testimonials__name {
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-family: $mont;
+    margin-top: 30px;
+    padding-bottom: 120px;
+}
 
 ///////////////////////////
 ///////////////////////////

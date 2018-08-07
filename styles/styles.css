@@ -336,10 +336,8 @@ p {
 
 .servicesWFeatures__header {
   text-transform: uppercase;
-  -webkit-columns: #1d1d1d;
-  columns: #1d1d1d;
+  color: #1d1d1d;
   text-align: center;
-  margin: 100px 0 80px 0;
   margin: 0 0 80px 0;
   font-size: 3rem; }
 
@@ -387,6 +385,51 @@ p {
   font-weight: 700;
   content: "\f00c";
   padding-right: 5px; }
+
+.testimonials {
+  background: #1d1d1d;
+  text-align: center; }
+
+.testimonials__header {
+  color: #dfdede;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  padding: 100px 0 80px 0; }
+
+.testimonials__imgChev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 50px; }
+
+.testimonials__testimonialHeadshotDiv {
+  margin: 0 40px; }
+
+.testimonials__chevron {
+  font-weight: 700;
+  color: #cacecf;
+  font-size: 2rem; }
+  .testimonials__chevron:hover {
+    color: #578ba5; }
+
+.testimonials__quote {
+  color: #d2d7d8;
+  font-size: 1.8rem; }
+
+.testimonials__name {
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  padding-bottom: 120px; }
 
 @media (max-width: 1000px) {
   .navWrapper {
