@@ -208,7 +208,7 @@ p {
 
 .whyChooseSection {
     display: flex;
-    // max-width: $fullScreen;
+    flex-wrap: wrap;
     margin: 0 auto;
     background: $bgGrey;
 }
@@ -300,7 +300,7 @@ p {
     color: $fontPrimary;
     border: 2px solid $bgBlue;
     border-radius: 15px;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 .serviceList__linkContent:hover {
@@ -471,6 +471,7 @@ p {
     text-align: center;
     padding: 7%;
     position: relative;
+    z-index: 10;
 }
 
 .serviceImage__info::before {
@@ -481,6 +482,7 @@ p {
     top: 9px;
     left: 72px;
     color: $servicesBGNumbers;
+    z-index: -10;
 }
 
 .serviceImage__info--1::before {
@@ -819,6 +821,44 @@ p {
 // START 1440px //
 //////////////////
 @media (max-width: 1440px) {
+    
+    // HEADER
+    
+    .nav {
+        padding: 15px 0;
+    }
+    
+    .navBg {
+        height: 89px;
+    }
+    
+    .hero__text {
+        font-size: 7rem;
+        text-transform: uppercase;
+        
+        &--small {
+            font-size: 2.8rem;
+            margin: 20px 0 40px 0;
+        }
+    }
+
+    //////////
+    // MAIN //
+    //////////
+
+    // whyChoose
+
+    .whyChoose {
+        width: 70%;
+    }
+
+
+    .whyChooseSection__bgDiv {
+        width: 30%;
+    }
+
+    // projects
+
     .projects__project {
         width: 50%;
     }
@@ -828,9 +868,9 @@ p {
 //////////////////
 
 //////////////////
-// START 1000px //
+// START 1100px //
 //////////////////
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     
     // NAV
     .hamburger {
@@ -871,6 +911,69 @@ p {
     .nav__header {
         padding-bottom: 0;
     }
+
+    //////////
+    // MAIN //
+    //////////
+
+    // whyChoose
+
+    .whyChoose {
+        width: 100%;
+        background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url(../assets/image-4.jpeg) center no-repeat;
+        background-size: cover;
+    }
+
+    .whyChoose__2ndHeader {
+        font-size: 2.2rem;
+    }
+
+    .whyChoose__description {
+        line-height: 1;
+    }
+
+    // servicesWFeatures
+
+    .servicesList {
+        flex-wrap: wrap;
+    }
+    .serviceList__service {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    // projects
+    .projects {
+        background: #fff;
+        padding: 5px;
+    }
+
+    .projects__project {
+        transition: all 0.3s;
+    }
+
+    .projects__project:hover {
+        transform: scale(1.02);
+    }
+
+    .projects__projectInfo {
+        background: $teamHover;
+    }
+
+    .projects__project {
+        margin: 5px;
+        width: calc(50% - 10px);
+
+    }
+
+    .project__link {
+        opacity: 1;
+        background: transparent;
+    }
+
+
+
+
 }
 //////////////////
 //  END 1000px  //
