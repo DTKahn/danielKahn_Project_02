@@ -597,6 +597,51 @@ p {
   font-size: 1.5rem;
   padding-bottom: 50px; }
 
+.ask {
+  background: #8ecceb;
+  padding-bottom: 120px; }
+
+.ask__header {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.5rem;
+  color: #1d1c1c;
+  padding: 100px 0 50px 0; }
+
+.ask__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ask__label {
+  position: absolute;
+  left: -10000px; }
+
+.ask__questionBox {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000;
+  padding: 12px 0;
+  border: 1px solid black;
+  background: #8ecceb; }
+
+.ask__submitQuestion {
+  width: 18%;
+  padding: 12px 0; }
+
 @media (max-width: 1440px) {
   .projects__project {
     width: 50%; } }

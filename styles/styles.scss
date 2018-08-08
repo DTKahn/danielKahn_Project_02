@@ -507,6 +507,50 @@ p {
     padding-bottom: 50px;
 }
 
+// ask
+
+.ask {
+    background: $bgBlue;
+    padding-bottom: 120px;
+}
+
+.ask__header {
+    @include headerStyles($askQuestionGrey);
+    padding: 100px 0 50px 0;
+}
+
+.ask__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ask__label {
+    // keeping for screen readers but taking out of the visible flow of the page <-- Dear grading instructor, if there is a better way to handle this please let me know!
+    position: absolute;
+    left: -10000px; 
+}
+
+.ask__questionBox {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+    padding: 12px 0;
+    border: 1px solid black;
+    background: $bgBlue;
+}
+
+.ask__submitQuestion {
+    width: 18%;
+    padding: 12px 0;
+}
+
 ///////////////////////////
 ///////////////////////////
 ////   MEDIA QUERIES   ////
