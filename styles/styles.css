@@ -905,6 +905,10 @@ p {
     width: 50%; } }
 
 @media (max-width: 1100px) {
+  .wrapper {
+    width: 80%; }
+  .nav__header {
+    font-size: 4.5rem; }
   .hamburger {
     display: block; }
   .nav__ul {
@@ -932,6 +936,10 @@ p {
     padding-left: 0; }
   .nav__header {
     padding-bottom: 0; }
+  .hero__text {
+    font-size: 5.5rem; }
+  .hero__text--small {
+    font-size: 2.2rem; }
   .whyChoose {
     width: 100%;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../assets/image-4.jpeg) center no-repeat;
@@ -967,7 +975,23 @@ p {
     width: calc(50% - 10px); }
   .project__link {
     opacity: 1;
-    background: transparent; } }
+    background: transparent; }
+  .footer1__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .footer1__section {
+    width: 50%;
+    min-width: 300px;
+    padding-left: 20px; }
+  .instagram__photoList {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .instagram__post {
+    margin-right: 5px; } }
 
 @media (max-width: 600px) {
   .nav__ul {
@@ -982,7 +1006,9 @@ p {
     flex-basis: 100%;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding: 5px 0; } }
+    padding: 5px 0; }
+  .footer1__section {
+    padding-right: 50px; } }
 
 @media (max-width: 400px) {
   .nav__header {

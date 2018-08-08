@@ -871,8 +871,15 @@ p {
 // START 1100px //
 //////////////////
 @media (max-width: 1100px) {
-    
+    .wrapper {
+        width: 80%;
+    }
+
     // NAV
+    .nav__header {
+        font-size: 4.5rem;
+    }
+    
     .hamburger {
         display: block;
     }
@@ -910,6 +917,14 @@ p {
 
     .nav__header {
         padding-bottom: 0;
+    }
+
+    .hero__text {
+        font-size: 5.5rem;
+    }
+
+    .hero__text--small {
+        font-size: 2.2rem;
     }
 
     //////////
@@ -971,6 +986,27 @@ p {
         background: transparent;
     }
 
+    // FOOTER
+
+    .footer1__inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer1__section {
+        width: 50%;
+        min-width: 300px;
+        padding-left: 20px;
+    }
+
+    .instagram__photoList {
+        justify-content: flex-start;
+    }
+
+    .instagram__post {
+        margin-right: 5px;
+    }
+
 
 
 
@@ -998,6 +1034,10 @@ p {
         flex-basis: 100%;
         flex-shrink: 0;
         padding: 5px 0;
+    }
+
+    .footer1__section {
+        padding-right: 50px;
     }
 
 }
