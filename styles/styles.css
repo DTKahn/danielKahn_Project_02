@@ -215,6 +215,14 @@ p {
   left: 0;
   z-index: 30; }
 
+.hiddenCheckbox {
+  position: fixed;
+  top: 5%;
+  left: 5%; }
+
+.hamburger__bars {
+  font-size: 3rem; }
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,7 +274,13 @@ p {
   justify-content: space-between;
   padding-left: 40px;
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  display: none; }
+
+.hiddenCheckbox:checked ~ .nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .welcome {
   text-align: center;

@@ -100,6 +100,16 @@ p {
     z-index: 30;
 }
 
+.hiddenCheckbox {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+.hamburger__bars {
+    font-size: 3rem;
+}
+
 .nav {
     display: flex;
     width: 100%;
@@ -154,6 +164,11 @@ p {
     justify-content: space-between;
     padding-left: 40px;
     flex-basis: 100%;
+    display: none;
+}
+
+.hiddenCheckbox:checked ~ .nav__ul {
+    display: flex;
 }
 
 //////////
