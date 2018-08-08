@@ -623,13 +623,45 @@ p {
 }
 
 .footer1__inner {
+    position: relative;
     color: #fff;
     display: flex;
     justify-content: space-between;
 }
 
+.footer1__inner::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    right: 0;
+}
+
 .contact__email {
     color: #fff;
+}
+
+.contact__email::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 5px;
+}
+
+.contact__phone::before {
+    content: "\f095";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 5px;
+    font-weight: 800;
+}
+
+.contact__address::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    padding-right: 5px;
+    font-weight: 800;
 }
 
 .footer1__section {
@@ -680,6 +712,7 @@ p {
 .contact__option,
 .aboutUs__description {
     font-size: 1.5rem;
+    padding-bottom: 20px;
 }
 
 .aboutUs__description {
@@ -722,6 +755,45 @@ p {
 
 .contact__socialLink:hover {
     color: $bgBlue;
+}
+
+// footer2
+
+.footer2 {
+    background: $fontPrimary;
+}
+
+.nav--footer {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav__header--footer {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nav__ul--footer {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 40px;
+    max-width: 550px;
+}
+
+.nav__a--footer {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.copyright {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 20px;
 }
 ///////////////////////////
 ///////////////////////////
