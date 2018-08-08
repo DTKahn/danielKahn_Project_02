@@ -256,61 +256,85 @@
     <footer>
         <div class="footer1">
             <div class="wrapper">
-                <div class="contact">
-                    <h2 class="contact__header">Contact</h2>
-                    <ul class="contact__options">
-                        <li class="contact__option">
-                            <a class="contact__email" href="info@hackeryou.com">info@hackeryou.com</a> <!-- Design shows infohackeryou.com, added @ -->
-                        </li>
-                        <li class="contact__option">
-                            <p class="contact__phone">123-456-7890</p>
-                        </li>
-                        <li class="contact__option">
-                            <p class="contact__address">Toronto, Ontario</p>
-                        </li>
-                        <li class="contact__option">
-                            <form action="email.php" method="POST" class="contact__emailForm" name="emailForm">
-                                <label class="contact__emailLabel" for="emailInput">Your Message</label>
-                                <input type="email" name="emailInput" class="contact__emailInput" id="emailInput" placeholder="email address">
-                        </li>
-                    </ul>
-                </div> <!-- End of footer contact -->
+                <div class="footer1__inner">
+                    <div class="footer1__section footer1__section--contact">
+                        <h2 class="footer1__header">Contact</h2>
+                        <ul class="contact__options">
+                            <li class="contact__option">
+                                <a class="contact__email" href="info@hackeryou.com">info@hackeryou.com</a> <!-- Design shows infohackeryou.com, added @ -->
+                            </li>
+                            <li class="contact__option">
+                                <p class="contact__phone">123-456-7890</p>
+                            </li>
+                            <li class="contact__option">
+                                <p class="contact__address">Toronto, Ontario</p>
+                            </li>
+                            <li class="contact__option">
+                                <form action="email.php" method="POST" class="contact__emailForm" name="emailForm">
+                                    <label class="contact__emailLabel" for="emailInput">Your Message</label>
+                                    <input type="email" name="emailInput" class="contact__emailInput" id="emailInput" placeholder="email address">
 
-                <div class="aboutUs">
-                    <h2 class="aboutUs__header">About Us</h2>
-                    <p class="aboutUs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- End of footer aboutUs-->
+                                    <label for="contact__submit" class="contact__submitLabel">Send</label>
+                                    <button type="submit" id="contact__submit" class="contact__submit" name="contact__submit"><i class="fas fa-paper-plane contact__submitButton"></i></button>
+                                </form>    
+                            </li>
+                            <li class="contact__social">
+                                <ul class="contact__socialList">
+                                    <li class="contact__socialCommunity">
+                                        <a class="contact__socialLink" href="#facebook">
+                                            <i class="contact__socialIcon fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="contact__socialCommunity">
+                                        <a class="contact__socialLink" href="#instagram">
+                                            <i class="contact__socialIcon fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="contact__socialCommunity">
+                                        <a class="contact__socialLink" href="#pintrest">
+                                            <i class="contact__socialIcon fab fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> <!-- End of footer contact -->
 
-                <div class="instagram">
-                    <h2 class="instagram__header">Instagram</h2>
-                    <ul class="instagram__photoList">
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-15.jpeg" alt="Instagram Preview – Looking down at a desk from point of view of worker"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-16.jpeg" alt="Instagram Preview – Close up of hand touching phone from point of view of person holding phone"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-17.jpeg" alt="Instagram Preview – City skyline aerial shot"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-18.jpeg" alt="Instagram Preview – Team-member hands all piled on each other in comradery"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-19.jpeg" alt="Instagram Preview – Stylistic shot of the corner of an office building from below looking upward"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-20.jpeg" alt="Instagram Preview – a plant and bench"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-21.jpeg" alt="Instagram Preview – Point of view shot looking down at phone"></a>
-                        </li>
-                        <li class="instagram__post">
-                            <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-22.jpeg" alt="Instagram Preview – Espresso-based drink and paperwork on a table"></a>
-                        </li>
-                    </ul>
+                    <div class="footer1__section footer1__section--aboutUs">
+                        <h2 class="footer1__header">About Us</h2>
+                        <p class="aboutUs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div> <!-- End of footer aboutUs-->
+
+                    <div class="footer1__section footer1__section--instagram">
+                        <h2 class="footer1__header footer1__header--instagram">Instagram</h2>
+                        <ul class="instagram__photoList">
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-15.jpeg" alt="Instagram Preview – Looking down at a desk from point of view of worker"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-16.jpeg" alt="Instagram Preview – Close up of hand touching phone from point of view of person holding phone"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-17.jpeg" alt="Instagram Preview – City skyline aerial shot"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-18.jpeg" alt="Instagram Preview – Team-member hands all piled on each other in comradery"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-19.jpeg" alt="Instagram Preview – Stylistic shot of the corner of an office building from below looking upward"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-20.jpeg" alt="Instagram Preview – a plant and bench"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-21.jpeg" alt="Instagram Preview – Point of view shot looking down at phone"></a>
+                            </li>
+                            <li class="instagram__post">
+                                <a class="instagram__link" href="#"><img class="instagram__photo" src="assets/image-22.jpeg" alt="Instagram Preview – Espresso-based drink and paperwork on a table"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </div> <!-- End of wrapper for footer1 -->
         </div> <!-- End of footer1 -->
 
@@ -329,20 +353,6 @@
                 <p class="copyright">2018 All rights reserved ©</p>
             </div> <!-- End of wrapper for footer2 -->
         </div> <!-- End of footer2 -->
-
-        <aside class="social">
-            <ul class="social__list">
-                <li class="social__community">
-                    <a class="social__link" href="#facebook"><i class="social__icon fab fa-facebook"></i></a>
-                </li>
-                <li class="social__community">
-                    <a class="social__link" href="#instagram"><i class="social__icon fab fa-instagram"></i></a>
-                </li>
-                <li class="social__community">
-                    <a class="social__link" href="#pintrest"><i class="social__icon fab fa-pinterest-p"></i></a>
-                </li>
-            </ul>
-        </aside>
     </footer>
 </div> <!-- End of bigWrapper -->
 </body>
