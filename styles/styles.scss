@@ -563,7 +563,7 @@ p {
 }
 
 .ask__submitQuestion {
-    width: 18%;
+    width: 155px;
     padding: 12px 0;
 }
 
@@ -767,10 +767,11 @@ p {
     font-size: 3rem;
     padding: 30px 30px;
     display: block;
+    transition: all 0.3s;
 }
 
 .contact__socialLink:hover {
-    color: $bgBlue;
+    transform: scale(1.1);
 }
 
 // footer2
@@ -978,13 +979,58 @@ p {
     .projects__project {
         margin: 5px;
         width: calc(50% - 10px);
-
     }
 
     .project__link {
         opacity: 1;
         background: transparent;
     }
+
+    // serviceImage
+
+    .serviceImage__image {
+        display: none;
+    }
+
+    .serviceImage__info {
+        width: 100%;
+    }
+
+    .serviceImage__info--1 {
+        background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url(../assets/image-10.jpeg) center no-repeat;
+        background-size: cover;
+    }
+
+    .serviceImage__info--2 {
+        background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url(../assets/image-11.jpeg) center no-repeat;
+        background-size: cover;
+    }
+
+    // ask
+
+    .ask__questionBox {
+        font-size: 2rem;
+    }
+
+    // team
+
+    .team__about {
+        position: relative;
+        display: flex;
+        background: transparent;
+        color: $fontPrimary;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        opacity: 1;
+        // this is a little bit off, ask an instructor
+    }
+
+    .team__teamMember {
+        padding-bottom: 50px;
+    }
+
+
 
     // FOOTER
 
@@ -996,7 +1042,6 @@ p {
     .footer1__section {
         width: 50%;
         min-width: 300px;
-        padding-left: 20px;
     }
 
     .instagram__photoList {
@@ -1021,25 +1066,72 @@ p {
 @media (max-width: 600px) {
 
     // // NAV
+    .nav__header {
+        font-size: 3.5rem;
+    }
+    
     .nav__ul {
         flex-wrap: wrap;
     }
 
     .nav__li {
         flex-basis: 100%;
-        text-align: center;
+        margin: 15px 0;
+        // text-align: center;
     }
 
     .nav__a {
         flex-basis: 100%;
         flex-shrink: 0;
-        padding: 5px 0;
+        padding: 15px 0;
     }
 
     .footer1__section {
         padding-right: 50px;
     }
 
+    // whyChooseSection 
+    .whyChoose__imgDiv {
+        display: none;
+    }
+
+    // testimonials
+
+    .testimonials__quote {
+        font-size: 1.5rem;
+    }
+
+    .testimonials__name {
+        font-size: 2rem;
+    }
+
+    // projects
+
+    .projects__project {
+        width: calc(100% - 10px);
+    }
+
+    // team
+    .team__teamMember {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .team img {
+        width: 50%;
+    }
+
+    .team__about {
+        position: relative;
+        display: flex;
+        background: transparent;
+        color: $fontPrimary;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        opacity: 1;
+        // this is a little bit off, ask an instructor
+    }
 }
 /////////////////
 //  END 600px  //
@@ -1047,14 +1139,31 @@ p {
 
 /////////////////////////
 //     START 400px     //
-// Testing up to 320px //
+// Testing up to 340px //
 /////////////////////////
 @media (max-width: 400px) {
     .nav__header {
         font-size: 2rem;
     }
+
+    .hero__text {
+        font-size: 4.5rem;
+    }
+
+    .hero__text--small {
+        font-size: 2.2rem;
+    }
+
+    .welcome__header {
+        font-size: 4rem;
+    }
+
+    // servicesWFeatures 
+    .servicesList__serviceName {
+        font-size: 2rem;
+    }
 }
 /////////////////////////
 //      END 400px      //
-// Testing up to 320px //
+// Testing up to 340px //
 /////////////////////////

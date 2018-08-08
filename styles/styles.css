@@ -658,7 +658,7 @@ p {
   background: #8ecceb; }
 
 .ask__submitQuestion {
-  width: 18%;
+  width: 155px;
   padding: 12px 0; }
 
 .team {
@@ -845,10 +845,15 @@ p {
   color: #848484;
   font-size: 3rem;
   padding: 30px 30px;
-  display: block; }
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .contact__socialLink:hover {
-  color: #8ecceb; }
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
 
 .footer2 {
   background: #1d1d1d; }
@@ -976,6 +981,39 @@ p {
   .project__link {
     opacity: 1;
     background: transparent; }
+  .serviceImage__image {
+    display: none; }
+  .serviceImage__info {
+    width: 100%; }
+  .serviceImage__info--1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../assets/image-10.jpeg) center no-repeat;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/image-10.jpeg) center no-repeat;
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/image-10.jpeg) center no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/image-10.jpeg) center no-repeat;
+    background-size: cover; }
+  .serviceImage__info--2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../assets/image-11.jpeg) center no-repeat;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/image-11.jpeg) center no-repeat;
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/image-11.jpeg) center no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/image-11.jpeg) center no-repeat;
+    background-size: cover; }
+  .ask__questionBox {
+    font-size: 2rem; }
+  .team__about {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: transparent;
+    color: #1d1d1d;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;
+    opacity: 1; }
+  .team__teamMember {
+    padding-bottom: 50px; }
   .footer1__inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -984,8 +1022,7 @@ p {
     justify-content: flex-start; }
   .footer1__section {
     width: 50%;
-    min-width: 300px;
-    padding-left: 20px; }
+    min-width: 300px; }
   .instagram__photoList {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -994,22 +1031,58 @@ p {
     margin-right: 5px; } }
 
 @media (max-width: 600px) {
+  .nav__header {
+    font-size: 3.5rem; }
   .nav__ul {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .nav__li {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    text-align: center; }
+    margin: 15px 0; }
   .nav__a {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding: 5px 0; }
+    padding: 15px 0; }
   .footer1__section {
-    padding-right: 50px; } }
+    padding-right: 50px; }
+  .whyChoose__imgDiv {
+    display: none; }
+  .testimonials__quote {
+    font-size: 1.5rem; }
+  .testimonials__name {
+    font-size: 2rem; }
+  .projects__project {
+    width: calc(100% - 10px); }
+  .team__teamMember {
+    grid-column: span 3;
+    text-align: center; }
+  .team img {
+    width: 50%; }
+  .team__about {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: transparent;
+    color: #1d1d1d;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;
+    opacity: 1; } }
 
 @media (max-width: 400px) {
   .nav__header {
+    font-size: 2rem; }
+  .hero__text {
+    font-size: 4.5rem; }
+  .hero__text--small {
+    font-size: 2.2rem; }
+  .welcome__header {
+    font-size: 4rem; }
+  .servicesList__serviceName {
     font-size: 2rem; } }
