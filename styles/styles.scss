@@ -226,7 +226,6 @@ p {
 
 .whyChoose__inner {
     width: 70%;
-    // flex-direction: column;
 }
 
 .whyChoose__header {
@@ -540,7 +539,7 @@ p {
 }
 
 .ask__label {
-    // keeping for screen readers but taking out of the visible flow of the page <-- Dear grading instructor, if there is a better way to handle this please let me know!
+    // keeping for screen readers but taking out of the visible flow of the page
     position: absolute;
     left: -10000px; 
 }
@@ -679,7 +678,6 @@ p {
 
 .footer1__section {
     width: 30%;
-    // max-width: 100%;
 }
 
 .footer1__header {
@@ -1042,7 +1040,6 @@ p {
         align-content: center;
         text-align: center;
         opacity: 1;
-        // this is a little bit off, ask an instructor
     }
 
     .team__teamMember {
@@ -1097,7 +1094,6 @@ p {
     .nav__li {
         flex-basis: 100%;
         margin: 15px 0;
-        // text-align: center;
     }
 
     .nav__a {
@@ -1150,7 +1146,6 @@ p {
         align-content: center;
         text-align: center;
         opacity: 1;
-        // this is a little bit off, ask an instructor
     }
 
     // FOOTER
