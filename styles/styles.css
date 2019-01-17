@@ -1055,6 +1055,18 @@ p {
   .instagram__post {
     margin-right: 5px; } }
 
+@media (max-width: 900px) {
+  .projects__projectName {
+    font-size: 2.5rem; } }
+
+@media (max-width: 800px) {
+  .projects__projectName {
+    font-size: 1.8rem; } }
+
+@media (max-width: 700px) {
+  .projects__projectName {
+    font-size: 1.3rem; } }
+
 @media (max-width: 600px) {
   .nav__header {
     font-size: 3.5rem; }
@@ -1081,6 +1093,8 @@ p {
     font-size: 2rem; }
   .projects__project {
     width: calc(100% - 10px); }
+  .projects__projectName {
+    font-size: 3rem; }
   .team__teamMember {
     grid-column: span 3;
     text-align: center; }
